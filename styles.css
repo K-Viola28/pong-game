@@ -1,1 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ff88;
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.score {
+    background: rgba(0, 255, 136, 0.1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+    flex: 1;
+}
+
+.score h2 {
+    color: #00ff88;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.score p {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+canvas {
+    background: #000;
+    border: 3px solid #00ff88;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.controls p {
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+.controls strong {
+    color: #00ff88;
+}
+
+.btn {
+    background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+
+    .scoreboard {
+        gap: 20px;
+    }
+
+    .controls p {
+        font-size: 0.85em;
+    }
+}
